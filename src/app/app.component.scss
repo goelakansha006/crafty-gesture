@@ -11,7 +11,48 @@
 .main {
     margin: auto;
     width: 96%;
+
+    .info-container{
+        display: flex; margin-top: 30px; justify-content: space-between;
+
+        .left{
+            width: 74%
+        }
+
+        .right{
+            width: 24%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        }
+    }
+
     
+
+    
+    
+}
+
+@media (max-width: 400px){
+    .main{
+        width: 100%;
+
+        .info-container{
+            display: flex; margin-top: 30px; flex-direction: column;
+    
+            .left{
+                width: 100%
+            }
+    
+            .right{
+                width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+            }
+        }
+    }
+
 }
 
 .banner{
